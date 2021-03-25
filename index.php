@@ -23,7 +23,9 @@ $router->get("/about",function($params){
 });
 
 // Passing params without get request
+// In browser while typing url place parameter in the place of (.+)
 $router->get("/params/(.+)",function($params){
+    // $params[0] wil be unset because it is the url itself so start using from 1 to get params.
     echo $params[1]; 
 });
 
