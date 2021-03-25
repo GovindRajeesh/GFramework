@@ -17,7 +17,12 @@ $router->get("/",function(){
 });
 
 $router->get("/about",function($params){
-    render("About",$_SERVER["DOCUMENT_ROOT"]."\\views\about.php","layout.php"); 
+    render("About",$_SERVER["DOCUMENT_ROOT"]."\\views\about.php","layout.php",$params=array("ff")); 
+});
+
+// Passing params without get request
+$router->get("/params/(.+)",function($params){
+    echo $params[1]; 
 });
 
 // Run router
