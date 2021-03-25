@@ -1,2 +1,2 @@
 # PHP-Gmvc
-A simple mvc framework implemented by me.
+A simple php framework implemented by me for routing and template rendering.
