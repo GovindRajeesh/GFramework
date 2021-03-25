@@ -1,4 +1,6 @@
 <?php
+// Framework 
+
 // Import cors
 require __DIR__."/tools/cors.php";
 // Import router class
